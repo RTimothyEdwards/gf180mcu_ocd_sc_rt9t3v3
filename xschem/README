@@ -1,0 +1,28 @@
+This set of schematics was taken from the OSU standard cell library for
+GF180MCU (https://github.com/stineje/globalfoundries-pdk-libs-gf180mcu_osu_sc)
+and adapted for use with the Open Circuit Design radiation-tolerant standard
+cell library.
+
+Still needs to be done:
+
+Required editing:
+
+All gates need to be corrected for W and L for the new layouts.
+
+Required new gates:
+
+1. Majority-3	(gf180mcu_ocd_sc_rt7t3v3__maj3_2/4)
+2. Antenna tie-down (gf180mcu_ocd_sc_rt7t3v3__ant)
+3. Decap (gf180mcu_ocd_sc_rt7t3v3__decap_2/3/4/6/8/12)
+4. Fill (gf180mcu_ocd_sc_rt7t3v3__fill_2/3/4/6/8/12) (even though the schematic
+	is effectively empty)
+
+Optional new gates:
+
+1. Additional output strengths for all cells (preferably 1, 2, 4 for all
+   major logic, and 1, 2, 4, 8, and 16 for the inverter, buffer, and clock
+   inverter and buffer.
+2. Additional OAI and AOI variations
+3. Standard 3-input gates for NAND, NOR, AND, OR
+4. Standard 4-input gates for NAND, NOR, AND, OR
+5. OA and AO variations 
