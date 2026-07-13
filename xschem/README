@@ -8,6 +8,8 @@ Still needs to be done:
 Required editing:
 
 All gates need to be corrected for W and L for the new layouts.
+Fix the clocking on the flops.
+Check all schematics for correctness.
 
 Required new gates:
 

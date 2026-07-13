@@ -333,10 +333,6 @@ flabel metal1 s 0 -60 896 60 0 FreeSans 400 0 0 0 VSS
 port 4 nsew ground bidirectional abutment
 flabel metal1 s 0 948 896 1068 0 FreeSans 400 0 0 0 VDD
 port 1 nsew power bidirectional abutment
-flabel pwell s 6 -50 106 50 0 FreeSans 400 0 0 0 VPW
-port 3 nsew ground bidirectional
-flabel nwell s 6 958 106 1058 0 FreeSans 400 0 0 0 VNW
-port 2 nsew power bidirectional
 flabel metal1 s 74 408 374 474 0 FreeSans 320 0 0 0 A
 port 10 nsew
 flabel metal1 s 422 107 474 566 0 FreeSans 320 0 0 0 Y
