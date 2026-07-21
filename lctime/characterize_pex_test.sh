@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# Extract the PEX netlist of a cell and run lctime on it.
+# Extract the PEX netlist of a combinational cell and run lctime on it.
 #
 # Test version (one cell only)
 # To do:  Get cellname from script arguments.
@@ -9,7 +9,7 @@
 echo ${PDK_ROOT:=/usr/share/pdk} > /dev/null
 echo ${PDK:=gf180mcuD} > /dev/null
 libname=gf180mcu_ocd_sc_rt9t3v3
-cellname=${libname}__inv_2
+cellname=${libname}__inv_1
 
 magic -dnull -noconsole -rcfile ${PDK_ROOT}/${PDK}/libs.tech/magic/${PDK}.magicrc << EOF
 extract path extfiles
