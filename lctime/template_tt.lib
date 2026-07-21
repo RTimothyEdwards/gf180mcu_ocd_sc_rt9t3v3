@@ -507,8 +507,8 @@ library(gf180mcu_ocd_sc_rt9t3v3__tt_025C_3v30) {
 		}
 	}
 	
-	cell (gf180mcu_ocd_sc_rt9t3v3__dfsrtp_2) {
-		cell_footprint : gf180mcu_ocd_sc_rt9t3v3__dfsrtp;
+	cell (gf180mcu_ocd_sc_rt9t3v3__dffsr_1) {
+		cell_footprint : gf180mcu_ocd_sc_rt9t3v3__dffsr;
 		area : 81.222400;
 		
 		ff (IQ, IQN) {
@@ -518,27 +518,13 @@ library(gf180mcu_ocd_sc_rt9t3v3__tt_025C_3v30) {
 			preset : "(!SN)" ;
 		}
 		
-		pg_pin(VPW) {
-			voltage_name : VPW;
-			pg_type : pwell;
-			physical_connection : device_layer;
-		}
-		
-		pg_pin(VNW) {
-			voltage_name : VNW;
-			pg_type : nwell;
-			physical_connection : device_layer;
-		}
-		
 		pg_pin(VDD) {
 			voltage_name : VDD;
-			related_bias_pin : VNW;
 			pg_type : primary_power;
 		}
 		
 		pg_pin(VSS) {
 			voltage_name : VSS;
-			related_bias_pin : VPW;
 			pg_type : primary_ground;
 		}
 		
@@ -1048,31 +1034,17 @@ library(gf180mcu_ocd_sc_rt9t3v3__tt_025C_3v30) {
 		}
 	}
 	
-	cell (gf180mcu_ocd_sc_rt9t3v3__inv_2) {
+	cell (gf180mcu_ocd_sc_rt9t3v3__inv_1) {
 		cell_footprint : gf180mcu_ocd_sc_rt9t3v3__inv;
 		area : 8.780800;
 		
-		pg_pin(VPW) {
-			voltage_name : VPW;
-			pg_type : pwell;
-			physical_connection : device_layer;
-		}
-		
-		pg_pin(VNW) {
-			voltage_name : VNW;
-			pg_type : nwell;
-			physical_connection : device_layer;
-		}
-		
 		pg_pin(VDD) {
 			voltage_name : VDD;
-			related_bias_pin : VNW;
 			pg_type : primary_power;
 		}
 		
 		pg_pin(VSS) {
 			voltage_name : VSS;
-			related_bias_pin : VPW;
 			pg_type : primary_ground;
 		}
 		
