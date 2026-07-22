@@ -6,7 +6,7 @@
 echo ${PDK_ROOT:=/usr/share/pdk} > /dev/null
 echo ${PDK:=gf180mcuD} > /dev/null
 
-for filename in *.sch; do
+for filename in gf180mcu_ocd_sc_*.sch; do
     if [ -f "$filename" ]; then
 	cellname=$(basename "$filename" .sch)
         echo "Running extraction on: ${cellname}.sch"

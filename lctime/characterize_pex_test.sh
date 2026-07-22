@@ -8,7 +8,7 @@
 
 echo ${PDK_ROOT:=/usr/share/pdk} > /dev/null
 echo ${PDK:=gf180mcuD} > /dev/null
-libname=gf180mcu_ocd_sc_rt9t3v3
+libname=gf180mcu_ocd_sc_rt12t3v3
 cellname=${libname}__inv_1
 
 magic -dnull -noconsole -rcfile ${PDK_ROOT}/${PDK}/libs.tech/magic/${PDK}.magicrc << EOF

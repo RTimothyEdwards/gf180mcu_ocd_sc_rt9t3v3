@@ -30,5 +30,5 @@ C {code_shown.sym} -380 130 0 0 {name=s1 only_toplevel=false value=".include /us
 C {lab_wire.sym} -330 -10 0 0 {name=p2 sig_type=std_logic lab=vdd}
 C {lab_wire.sym} -260 -110 0 0 {name=p3 sig_type=std_logic lab=in}
 C {devices/opin.sym} 150 -30 0 0 {name=p6 lab=out}
-C {gf180mcu_ocd_sc_rt9t3v3__inv_1.sym} -40 -10 0 0 {name=x1}
+C {gf180mcu_ocd_sc_rt12t3v3__inv_1.sym} -40 -10 0 0 {name=x1}
 C {ammeter.sym} -250 -10 3 0 {name=Vmeas savecurrent=true spice_ignore=0}

@@ -1,0 +1,14 @@
+** sch_path: /home/tim/gits/gf180mcu_ocd_sc_rt12t3v3/xschem/gf180mcu_ocd_sc_rt12t3v3__clkbuf_1.sch
+.subckt gf180mcu_ocd_sc_rt12t3v3__clkbuf_1 A Y VDD VSS
+*.PININFO A:I Y:O VDD:I VSS:I
+XM1 net1 A VDD VDD pfet_03v3 L=0.28u W=2.57u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=1
+XM2 net1 A VSS VSS nfet_03v3 L=0.28u W=1.02u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=1
+XM3 Y net1 VDD VDD pfet_03v3 L=0.28u W=2.57u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=1
+XM4 Y net1 VSS VSS nfet_03v3 L=0.28u W=1.02u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=1
+.ends
+.GLOBAL VDD
+.GLOBAL VSS

@@ -5,7 +5,7 @@
 echo ${PDK_ROOT:=/usr/share/pdk} > /dev/null
 echo ${PDK:=gf180mcuD} > /dev/null
 
-for filename in ../magic/*.mag; do
+for filename in ../magic/gf180mcu_ocd_sc_*.mag; do
     if [ -f "$filename" ]; then
         cellname=$(basename "$filename" .mag)
         echo "Generating GDS for: ${cellname}.mag"

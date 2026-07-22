@@ -1,5 +1,5 @@
 ---------------------------------------------
-gf180mcu_ocd_sc_rt9t3v3
+gf180mcu_ocd_sc_rt12t3v3
 ---------------------------------------------
 
 This is a standard cell library for the GF180MCU process and open PDK,
@@ -18,10 +18,10 @@ memory.
 These cell designs use an "enclosed drain" transistor layout that
 keeps the drain enclosed while minimizing the device width.  With a
 short effective nFET width, the pFET devices are proportionally short
-as well, and the cell can be made to fit in a 7-track height site
-(although the library cell height was ultimately increased to 9 tracks
-to accommodate guard rings for protection against single-event
-latchup).
+as well, and the cell can be made to fit in a 12-track height site
+(there was a goal of having a 9-track height, but the DFFSR would
+have blocked nearly all metal 2 routing, so the final track height
+was increased to 12).
 
 Note that the GF180MCU process is itself a poor choice for space
 applications due to the thick oxide which exacerbates the problem of

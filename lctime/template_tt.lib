@@ -1,4 +1,4 @@
-library(gf180mcu_ocd_sc_rt9t3v3__tt_025C_3v30) {
+library(gf180mcu_ocd_sc_rt12t3v3__tt_025C_3v30) {
 	delay_model : "table_lookup";
 	
 	technology ("cmos");
@@ -80,8 +80,8 @@ library(gf180mcu_ocd_sc_rt9t3v3__tt_025C_3v30) {
 		index_2 ("1, 2, 3, 4, 5, 6, 7");
 	}
 	
-	cell (gf180mcu_ocd_sc_rt9t3v3__dlxtp_2) {
-		cell_footprint : gf180mcu_ocd_sc_rt9t3v3__dlxtp;
+	cell (gf180mcu_ocd_sc_rt12t3v3__dlxtp_2) {
+		cell_footprint : gf180mcu_ocd_sc_rt12t3v3__dlxtp;
 		area : 41.708800;
 		
 		latch (IQ, IQN) {
@@ -141,8 +141,8 @@ library(gf180mcu_ocd_sc_rt9t3v3__tt_025C_3v30) {
 		}
 	}
 	
-	cell (gf180mcu_ocd_sc_rt9t3v3__dlxtn_2) {
-		cell_footprint : gf180mcu_ocd_sc_rt9t3v3__dlxtn;
+	cell (gf180mcu_ocd_sc_rt12t3v3__dlxtn_2) {
+		cell_footprint : gf180mcu_ocd_sc_rt12t3v3__dlxtn;
 		area : 41.708800;
 		
 		latch (IQ, IQN) {
@@ -202,8 +202,8 @@ library(gf180mcu_ocd_sc_rt9t3v3__tt_025C_3v30) {
 		}
 	}
 	
-	cell (gf180mcu_ocd_sc_rt9t3v3__dlxfp_2) {
-		cell_footprint : gf180mcu_ocd_sc_rt9t3v3__dlxfp;
+	cell (gf180mcu_ocd_sc_rt12t3v3__dlxfp_2) {
+		cell_footprint : gf180mcu_ocd_sc_rt12t3v3__dlxfp;
 		area : 41.708800;
 		
 		latch (IQ, IQN) {
@@ -263,8 +263,8 @@ library(gf180mcu_ocd_sc_rt9t3v3__tt_025C_3v30) {
 		}
 	}
 	
-	cell (gf180mcu_ocd_sc_rt9t3v3__dlxfn_2) {
-		cell_footprint : gf180mcu_ocd_sc_rt9t3v3__dlxfn;
+	cell (gf180mcu_ocd_sc_rt12t3v3__dlxfn_2) {
+		cell_footprint : gf180mcu_ocd_sc_rt12t3v3__dlxfn;
 		area : 41.708800;
 		
 		latch (IQ, IQN) {
@@ -324,8 +324,8 @@ library(gf180mcu_ocd_sc_rt9t3v3__tt_025C_3v30) {
 		}
 	}
 	
-	cell (gf180mcu_ocd_sc_rt9t3v3__dfxtp_2) {
-		cell_footprint : gf180mcu_ocd_sc_rt9t3v3__dfxtp;
+	cell (gf180mcu_ocd_sc_rt12t3v3__dfxtp_2) {
+		cell_footprint : gf180mcu_ocd_sc_rt12t3v3__dfxtp;
 		area : 59.270400;
 		
 		ff (IQ, IQN) {
@@ -385,8 +385,8 @@ library(gf180mcu_ocd_sc_rt9t3v3__tt_025C_3v30) {
 		}
 	}
 	
-	cell (gf180mcu_ocd_sc_rt9t3v3__dfxtp_4) {
-		cell_footprint : gf180mcu_ocd_sc_rt9t3v3__dfxtp;
+	cell (gf180mcu_ocd_sc_rt12t3v3__dfxtp_4) {
+		cell_footprint : gf180mcu_ocd_sc_rt12t3v3__dfxtp;
 		area : 65.856000;
 		
 		ff (IQ, IQN) {
@@ -446,8 +446,8 @@ library(gf180mcu_ocd_sc_rt9t3v3__tt_025C_3v30) {
 		}
 	}
 	
-	cell (gf180mcu_ocd_sc_rt9t3v3__dfxtn_2) {
-		cell_footprint : gf180mcu_ocd_sc_rt9t3v3__dfxtn;
+	cell (gf180mcu_ocd_sc_rt12t3v3__dfxtn_2) {
+		cell_footprint : gf180mcu_ocd_sc_rt12t3v3__dfxtn;
 		area : 59.270400;
 		
 		ff (IQ, IQN) {
@@ -507,8 +507,8 @@ library(gf180mcu_ocd_sc_rt9t3v3__tt_025C_3v30) {
 		}
 	}
 	
-	cell (gf180mcu_ocd_sc_rt9t3v3__dffsr_1) {
-		cell_footprint : gf180mcu_ocd_sc_rt9t3v3__dffsr;
+	cell (gf180mcu_ocd_sc_rt12t3v3__dffsr_1) {
+		cell_footprint : gf180mcu_ocd_sc_rt12t3v3__dffsr;
 		area : 81.222400;
 		
 		ff (IQ, IQN) {
@@ -572,10 +572,19 @@ library(gf180mcu_ocd_sc_rt9t3v3__tt_025C_3v30) {
 			max_transition : 1.5;
 
 		}
+
+		pin (QN) {
+			direction : output;
+			function : "IQN";
+			related_ground_pin : "VSS";
+			related_power_pin : "VDD";
+			max_transition : 1.5;
+
+		}
 	}
 	
-	cell (gf180mcu_ocd_sc_rt9t3v3__buff_2) {
-		cell_footprint : gf180mcu_ocd_sc_rt9t3v3__buff;
+	cell (gf180mcu_ocd_sc_rt12t3v3__buff_2) {
+		cell_footprint : gf180mcu_ocd_sc_rt12t3v3__buff;
 		area : 13.171200;
 		
 		pg_pin(VPW) {
@@ -620,8 +629,8 @@ library(gf180mcu_ocd_sc_rt9t3v3__tt_025C_3v30) {
 		}
 	}
 	
-	cell (gf180mcu_ocd_sc_rt9t3v3__buff_4) {
-		cell_footprint : gf180mcu_ocd_sc_rt9t3v3__buff;
+	cell (gf180mcu_ocd_sc_rt12t3v3__buff_4) {
+		cell_footprint : gf180mcu_ocd_sc_rt12t3v3__buff;
 		area : 19.756800;
 		
 		pg_pin(VPW) {
@@ -666,8 +675,8 @@ library(gf180mcu_ocd_sc_rt9t3v3__tt_025C_3v30) {
 		}
 	}
 	
-	cell (gf180mcu_ocd_sc_rt9t3v3__buff_8) {
-		cell_footprint : gf180mcu_ocd_sc_rt9t3v3__buff;
+	cell (gf180mcu_ocd_sc_rt12t3v3__buff_8) {
+		cell_footprint : gf180mcu_ocd_sc_rt12t3v3__buff;
 		area : 39.513600;
 		
 		pg_pin(VPW) {
@@ -712,8 +721,8 @@ library(gf180mcu_ocd_sc_rt9t3v3__tt_025C_3v30) {
 		}
 	}
 	
-	cell (gf180mcu_ocd_sc_rt9t3v3__buff_12) {
-		cell_footprint : gf180mcu_ocd_sc_rt9t3v3__buff;
+	cell (gf180mcu_ocd_sc_rt12t3v3__buff_12) {
+		cell_footprint : gf180mcu_ocd_sc_rt12t3v3__buff;
 		area : 54.880000;
 		
 		pg_pin(VPW) {
@@ -758,8 +767,8 @@ library(gf180mcu_ocd_sc_rt9t3v3__tt_025C_3v30) {
 		}
 	}
 	
-	cell (gf180mcu_ocd_sc_rt9t3v3__buff_16) {
-		cell_footprint : gf180mcu_ocd_sc_rt9t3v3__buff;
+	cell (gf180mcu_ocd_sc_rt12t3v3__buff_16) {
+		cell_footprint : gf180mcu_ocd_sc_rt12t3v3__buff;
 		area : 65.85600;
 		
 		pg_pin(VPW) {
@@ -804,8 +813,8 @@ library(gf180mcu_ocd_sc_rt9t3v3__tt_025C_3v30) {
 		}
 	}
 	
-	cell (gf180mcu_ocd_sc_rt9t3v3__clkbuff_4) {
-		cell_footprint : gf180mcu_ocd_sc_rt9t3v3__clkbuff;
+	cell (gf180mcu_ocd_sc_rt12t3v3__clkbuff_4) {
+		cell_footprint : gf180mcu_ocd_sc_rt12t3v3__clkbuff;
 		area : 19.756800;
 		
 		pg_pin(VPW) {
@@ -850,8 +859,8 @@ library(gf180mcu_ocd_sc_rt9t3v3__tt_025C_3v30) {
 		}
 	}
 	
-	cell (gf180mcu_ocd_sc_rt9t3v3__clkbuff_8) {
-		cell_footprint : gf180mcu_ocd_sc_rt9t3v3__clkbuff;
+	cell (gf180mcu_ocd_sc_rt12t3v3__clkbuff_8) {
+		cell_footprint : gf180mcu_ocd_sc_rt12t3v3__clkbuff;
 		area : 39.513600;
 		
 		pg_pin(VPW) {
@@ -896,8 +905,8 @@ library(gf180mcu_ocd_sc_rt9t3v3__tt_025C_3v30) {
 		}
 	}
 	
-	cell (gf180mcu_ocd_sc_rt9t3v3__clkbuff_12) {
-		cell_footprint : gf180mcu_ocd_sc_rt9t3v3__clkbuff;
+	cell (gf180mcu_ocd_sc_rt12t3v3__clkbuff_12) {
+		cell_footprint : gf180mcu_ocd_sc_rt12t3v3__clkbuff;
 		area : 54.880000;
 		
 		pg_pin(VPW) {
@@ -942,8 +951,8 @@ library(gf180mcu_ocd_sc_rt9t3v3__tt_025C_3v30) {
 		}
 	}
 	
-	cell (gf180mcu_ocd_sc_rt9t3v3__dlybuff_2) {
-		cell_footprint : gf180mcu_ocd_sc_rt9t3v3__dlybuff;
+	cell (gf180mcu_ocd_sc_rt12t3v3__dlybuff_2) {
+		cell_footprint : gf180mcu_ocd_sc_rt12t3v3__dlybuff;
 		area : 24.147200;
 		
 		pg_pin(VPW) {
@@ -988,8 +997,8 @@ library(gf180mcu_ocd_sc_rt9t3v3__tt_025C_3v30) {
 		}
 	}
 	
-	cell (gf180mcu_ocd_sc_rt9t3v3__dlybuff_4) {
-		cell_footprint : gf180mcu_ocd_sc_rt9t3v3__dlybuff;
+	cell (gf180mcu_ocd_sc_rt12t3v3__dlybuff_4) {
+		cell_footprint : gf180mcu_ocd_sc_rt12t3v3__dlybuff;
 		area : 30.732800;
 		
 		pg_pin(VPW) {
@@ -1034,8 +1043,8 @@ library(gf180mcu_ocd_sc_rt9t3v3__tt_025C_3v30) {
 		}
 	}
 	
-	cell (gf180mcu_ocd_sc_rt9t3v3__inv_1) {
-		cell_footprint : gf180mcu_ocd_sc_rt9t3v3__inv;
+	cell (gf180mcu_ocd_sc_rt12t3v3__inv_1) {
+		cell_footprint : gf180mcu_ocd_sc_rt12t3v3__inv;
 		area : 8.780800;
 		
 		pg_pin(VDD) {
@@ -1066,8 +1075,8 @@ library(gf180mcu_ocd_sc_rt9t3v3__tt_025C_3v30) {
 		}
 	}
 	
-	cell (gf180mcu_ocd_sc_rt9t3v3__inv_4) {
-		cell_footprint : gf180mcu_ocd_sc_rt9t3v3__inv;
+	cell (gf180mcu_ocd_sc_rt12t3v3__inv_4) {
+		cell_footprint : gf180mcu_ocd_sc_rt12t3v3__inv;
 		area : 15.366400;
 		
 		pg_pin(VPW) {
@@ -1112,8 +1121,8 @@ library(gf180mcu_ocd_sc_rt9t3v3__tt_025C_3v30) {
 		}
 	}
 	
-	cell (gf180mcu_ocd_sc_rt9t3v3__inv_6) {
-		cell_footprint : gf180mcu_ocd_sc_rt9t3v3__inv;
+	cell (gf180mcu_ocd_sc_rt12t3v3__inv_6) {
+		cell_footprint : gf180mcu_ocd_sc_rt12t3v3__inv;
 		area : 21.952000;
 		
 		pg_pin(VPW) {
@@ -1158,8 +1167,8 @@ library(gf180mcu_ocd_sc_rt9t3v3__tt_025C_3v30) {
 		}
 	}
 	
-	cell (gf180mcu_ocd_sc_rt9t3v3__invz_2) {
-		cell_footprint : gf180mcu_ocd_sc_rt9t3v3__invz;
+	cell (gf180mcu_ocd_sc_rt12t3v3__invz_2) {
+		cell_footprint : gf180mcu_ocd_sc_rt12t3v3__invz;
 		area : 35.123200;
 		
 		pg_pin(VPW) {
@@ -1213,8 +1222,8 @@ library(gf180mcu_ocd_sc_rt9t3v3__tt_025C_3v30) {
 		}
 	}
 	
-	cell (gf180mcu_ocd_sc_rt9t3v3__nand2_2) {
-		cell_footprint : gf180mcu_ocd_sc_rt9t3v3__nand2;
+	cell (gf180mcu_ocd_sc_rt12t3v3__nand2_2) {
+		cell_footprint : gf180mcu_ocd_sc_rt12t3v3__nand2;
 		area : 15.366400;
 		
 		pg_pin(VPW) {
@@ -1267,8 +1276,8 @@ library(gf180mcu_ocd_sc_rt9t3v3__tt_025C_3v30) {
 		}
 	}
 	
-	cell (gf180mcu_ocd_sc_rt9t3v3__nand2_4) {
-		cell_footprint : gf180mcu_ocd_sc_rt9t3v3__nand2;
+	cell (gf180mcu_ocd_sc_rt12t3v3__nand2_4) {
+		cell_footprint : gf180mcu_ocd_sc_rt12t3v3__nand2;
 		area : 28.537600;
 		
 		pg_pin(VPW) {
@@ -1321,8 +1330,8 @@ library(gf180mcu_ocd_sc_rt9t3v3__tt_025C_3v30) {
 		}
 	}
 	
-	cell (gf180mcu_ocd_sc_rt9t3v3__nand2b_2) {
-		cell_footprint : gf180mcu_ocd_sc_rt9t3v3__nand2b;
+	cell (gf180mcu_ocd_sc_rt12t3v3__nand2b_2) {
+		cell_footprint : gf180mcu_ocd_sc_rt12t3v3__nand2b;
 		area : 21.952000;
 		
 		pg_pin(VPW) {
@@ -1375,8 +1384,8 @@ library(gf180mcu_ocd_sc_rt9t3v3__tt_025C_3v30) {
 		}
 	}
 	
-	cell (gf180mcu_ocd_sc_rt9t3v3__nand2b_4) {
-		cell_footprint : gf180mcu_ocd_sc_rt9t3v3__nand2b;
+	cell (gf180mcu_ocd_sc_rt12t3v3__nand2b_4) {
+		cell_footprint : gf180mcu_ocd_sc_rt12t3v3__nand2b;
 		area : 35.123200;
 		
 		pg_pin(VPW) {
@@ -1429,8 +1438,8 @@ library(gf180mcu_ocd_sc_rt9t3v3__tt_025C_3v30) {
 		}
 	}
 	
-	cell (gf180mcu_ocd_sc_rt9t3v3__nand3_2) {
-		cell_footprint : gf180mcu_ocd_sc_rt9t3v3__nand3;
+	cell (gf180mcu_ocd_sc_rt12t3v3__nand3_2) {
+		cell_footprint : gf180mcu_ocd_sc_rt12t3v3__nand3;
 		area : 24.147200;
 		
 		pg_pin(VPW) {
@@ -1491,8 +1500,8 @@ library(gf180mcu_ocd_sc_rt9t3v3__tt_025C_3v30) {
 		}
 	}
 	
-	cell (gf180mcu_ocd_sc_rt9t3v3__nand4_2) {
-		cell_footprint : gf180mcu_ocd_sc_rt9t3v3__nand4;
+	cell (gf180mcu_ocd_sc_rt12t3v3__nand4_2) {
+		cell_footprint : gf180mcu_ocd_sc_rt12t3v3__nand4;
 		area : 30.732800;
 		
 		pg_pin(VPW) {
@@ -1561,8 +1570,8 @@ library(gf180mcu_ocd_sc_rt9t3v3__tt_025C_3v30) {
 		}
 	}
 	
-	cell (gf180mcu_ocd_sc_rt9t3v3__nor2_2) {
-		cell_footprint : gf180mcu_ocd_sc_rt9t3v3__nor2;
+	cell (gf180mcu_ocd_sc_rt12t3v3__nor2_2) {
+		cell_footprint : gf180mcu_ocd_sc_rt12t3v3__nor2;
 		area : 15.366400;
 		
 		pg_pin(VPW) {
@@ -1615,8 +1624,8 @@ library(gf180mcu_ocd_sc_rt9t3v3__tt_025C_3v30) {
 		}
 	}
 	
-	cell (gf180mcu_ocd_sc_rt9t3v3__nor2_4) {
-		cell_footprint : gf180mcu_ocd_sc_rt9t3v3__nor2;
+	cell (gf180mcu_ocd_sc_rt12t3v3__nor2_4) {
+		cell_footprint : gf180mcu_ocd_sc_rt12t3v3__nor2;
 		area : 28.537600;
 		
 		pg_pin(VPW) {
@@ -1669,8 +1678,8 @@ library(gf180mcu_ocd_sc_rt9t3v3__tt_025C_3v30) {
 		}
 	}
 	
-	cell (gf180mcu_ocd_sc_rt9t3v3__nor2b_2) {
-		cell_footprint : gf180mcu_ocd_sc_rt9t3v3__nor2b;
+	cell (gf180mcu_ocd_sc_rt12t3v3__nor2b_2) {
+		cell_footprint : gf180mcu_ocd_sc_rt12t3v3__nor2b;
 		area : 21.952000;
 		
 		pg_pin(VPW) {
@@ -1723,8 +1732,8 @@ library(gf180mcu_ocd_sc_rt9t3v3__tt_025C_3v30) {
 		}
 	}
 	
-	cell (gf180mcu_ocd_sc_rt9t3v3__nor2b_4) {
-		cell_footprint : gf180mcu_ocd_sc_rt9t3v3__nor2b;
+	cell (gf180mcu_ocd_sc_rt12t3v3__nor2b_4) {
+		cell_footprint : gf180mcu_ocd_sc_rt12t3v3__nor2b;
 		area : 35.123200;
 		
 		pg_pin(VPW) {
@@ -1777,8 +1786,8 @@ library(gf180mcu_ocd_sc_rt9t3v3__tt_025C_3v30) {
 		}
 	}
 	
-	cell (gf180mcu_ocd_sc_rt9t3v3__nor3_2) {
-		cell_footprint : gf180mcu_ocd_sc_rt9t3v3__nor3;
+	cell (gf180mcu_ocd_sc_rt12t3v3__nor3_2) {
+		cell_footprint : gf180mcu_ocd_sc_rt12t3v3__nor3;
 		area : 24.147200;
 		
 		pg_pin(VPW) {
@@ -1839,8 +1848,8 @@ library(gf180mcu_ocd_sc_rt9t3v3__tt_025C_3v30) {
 		}
 	}
 	
-	cell (gf180mcu_ocd_sc_rt9t3v3__and2_2) {
-		cell_footprint : gf180mcu_ocd_sc_rt9t3v3__and2;
+	cell (gf180mcu_ocd_sc_rt12t3v3__and2_2) {
+		cell_footprint : gf180mcu_ocd_sc_rt12t3v3__and2;
 		area : 15.366400;
 		
 		pg_pin(VPW) {
@@ -1893,8 +1902,8 @@ library(gf180mcu_ocd_sc_rt9t3v3__tt_025C_3v30) {
 		}
 	}
 	
-	cell (gf180mcu_ocd_sc_rt9t3v3__and2_4) {
-		cell_footprint : gf180mcu_ocd_sc_rt9t3v3__and2;
+	cell (gf180mcu_ocd_sc_rt12t3v3__and2_4) {
+		cell_footprint : gf180mcu_ocd_sc_rt12t3v3__and2;
 		area : 21.952000;
 		
 		pg_pin(VPW) {
@@ -1947,8 +1956,8 @@ library(gf180mcu_ocd_sc_rt9t3v3__tt_025C_3v30) {
 		}
 	}
 	
-	cell (gf180mcu_ocd_sc_rt9t3v3__or2_2) {
-		cell_footprint : gf180mcu_ocd_sc_rt9t3v3__or2;
+	cell (gf180mcu_ocd_sc_rt12t3v3__or2_2) {
+		cell_footprint : gf180mcu_ocd_sc_rt12t3v3__or2;
 		area : 15.366400;
 		
 		pg_pin(VPW) {
@@ -2001,8 +2010,8 @@ library(gf180mcu_ocd_sc_rt9t3v3__tt_025C_3v30) {
 		}
 	}
 	
-	cell (gf180mcu_ocd_sc_rt9t3v3__or2_4) {
-		cell_footprint : gf180mcu_ocd_sc_rt9t3v3__or2;
+	cell (gf180mcu_ocd_sc_rt12t3v3__or2_4) {
+		cell_footprint : gf180mcu_ocd_sc_rt12t3v3__or2;
 		area : 21.952000;
 		
 		pg_pin(VPW) {
@@ -2055,8 +2064,8 @@ library(gf180mcu_ocd_sc_rt9t3v3__tt_025C_3v30) {
 		}
 	}
 	
-	cell (gf180mcu_ocd_sc_rt9t3v3__xnor2_2) {
-		cell_footprint : gf180mcu_ocd_sc_rt9t3v3__xnor2;
+	cell (gf180mcu_ocd_sc_rt12t3v3__xnor2_2) {
+		cell_footprint : gf180mcu_ocd_sc_rt12t3v3__xnor2;
 		area : 30.732800;
 		
 		pg_pin(VPW) {
@@ -2109,8 +2118,8 @@ library(gf180mcu_ocd_sc_rt9t3v3__tt_025C_3v30) {
 		}
 	}
 	
-	cell (gf180mcu_ocd_sc_rt9t3v3__xnor2_4) {
-		cell_footprint : gf180mcu_ocd_sc_rt9t3v3__xnor2;
+	cell (gf180mcu_ocd_sc_rt12t3v3__xnor2_4) {
+		cell_footprint : gf180mcu_ocd_sc_rt12t3v3__xnor2;
 		area : 37.318400;
 		
 		pg_pin(VPW) {
@@ -2163,8 +2172,8 @@ library(gf180mcu_ocd_sc_rt9t3v3__tt_025C_3v30) {
 		}
 	}
 	
-	cell (gf180mcu_ocd_sc_rt9t3v3__xor2_2) {
-		cell_footprint : gf180mcu_ocd_sc_rt9t3v3__xor2;
+	cell (gf180mcu_ocd_sc_rt12t3v3__xor2_2) {
+		cell_footprint : gf180mcu_ocd_sc_rt12t3v3__xor2;
 		area : 30.732800;
 		
 		pg_pin(VPW) {
@@ -2217,8 +2226,8 @@ library(gf180mcu_ocd_sc_rt9t3v3__tt_025C_3v30) {
 		}
 	}
 	
-	cell (gf180mcu_ocd_sc_rt9t3v3__xor2_4) {
-		cell_footprint : gf180mcu_ocd_sc_rt9t3v3__xor2;
+	cell (gf180mcu_ocd_sc_rt12t3v3__xor2_4) {
+		cell_footprint : gf180mcu_ocd_sc_rt12t3v3__xor2;
 		area : 37.318400;
 		
 		pg_pin(VPW) {
@@ -2271,8 +2280,8 @@ library(gf180mcu_ocd_sc_rt9t3v3__tt_025C_3v30) {
 		}
 	}
 	
-	cell (gf180mcu_ocd_sc_rt9t3v3__mux2_2) {
-		cell_footprint : gf180mcu_ocd_sc_rt9t3v3__mux2;
+	cell (gf180mcu_ocd_sc_rt12t3v3__mux2_2) {
+		cell_footprint : gf180mcu_ocd_sc_rt12t3v3__mux2;
 		area : 26.342400;
 		
 		pg_pin(VPW) {
@@ -2333,8 +2342,8 @@ library(gf180mcu_ocd_sc_rt9t3v3__tt_025C_3v30) {
 		}
 	}
 	
-	cell (gf180mcu_ocd_sc_rt9t3v3__mux2_4) {
-		cell_footprint : gf180mcu_ocd_sc_rt9t3v3__mux2;
+	cell (gf180mcu_ocd_sc_rt12t3v3__mux2_4) {
+		cell_footprint : gf180mcu_ocd_sc_rt12t3v3__mux2;
 		area : 32.928000;
 		
 		pg_pin(VPW) {
@@ -2395,8 +2404,8 @@ library(gf180mcu_ocd_sc_rt9t3v3__tt_025C_3v30) {
 		}
 	}
 	
-	cell (gf180mcu_ocd_sc_rt9t3v3__maj3_2) {
-		cell_footprint : gf180mcu_ocd_sc_rt9t3v3__maj3;
+	cell (gf180mcu_ocd_sc_rt12t3v3__maj3_2) {
+		cell_footprint : gf180mcu_ocd_sc_rt12t3v3__maj3;
 		area : 26.342400;
 		
 		pg_pin(VPW) {
@@ -2457,8 +2466,8 @@ library(gf180mcu_ocd_sc_rt9t3v3__tt_025C_3v30) {
 		}
 	}
 	
-	cell (gf180mcu_ocd_sc_rt9t3v3__maj3_4) {
-		cell_footprint : gf180mcu_ocd_sc_rt9t3v3__maj3;
+	cell (gf180mcu_ocd_sc_rt12t3v3__maj3_4) {
+		cell_footprint : gf180mcu_ocd_sc_rt12t3v3__maj3;
 		area : 32.928000;
 		
 		pg_pin(VPW) {
@@ -2519,8 +2528,8 @@ library(gf180mcu_ocd_sc_rt9t3v3__tt_025C_3v30) {
 		}
 	}
 	
-	cell (gf180mcu_ocd_sc_rt9t3v3__aoi21_2) {
-		cell_footprint : gf180mcu_ocd_sc_rt9t3v3__aoi21;
+	cell (gf180mcu_ocd_sc_rt12t3v3__aoi21_2) {
+		cell_footprint : gf180mcu_ocd_sc_rt12t3v3__aoi21;
 		area: 21.952000;
 		
 		pg_pin(VPW) {
@@ -2581,8 +2590,8 @@ library(gf180mcu_ocd_sc_rt9t3v3__tt_025C_3v30) {
 		}
 	}
 
-	cell (gf180mcu_ocd_sc_rt9t3v3__aoi21_4) {
-		cell_footprint : gf180mcu_ocd_sc_rt9t3v3__aoi21;
+	cell (gf180mcu_ocd_sc_rt12t3v3__aoi21_4) {
+		cell_footprint : gf180mcu_ocd_sc_rt12t3v3__aoi21;
 		area: 41.708800;
 		
 		pg_pin(VPW) {
@@ -2643,8 +2652,8 @@ library(gf180mcu_ocd_sc_rt9t3v3__tt_025C_3v30) {
 		}
 	}
 	
-	cell (gf180mcu_ocd_sc_rt9t3v3__aoi21b_2) {
-		cell_footprint : gf180mcu_ocd_sc_rt9t3v3__aoi21b;
+	cell (gf180mcu_ocd_sc_rt12t3v3__aoi21b_2) {
+		cell_footprint : gf180mcu_ocd_sc_rt12t3v3__aoi21b;
 		area: 28.537600;
 		
 		pg_pin(VPW) {
@@ -2705,8 +2714,8 @@ library(gf180mcu_ocd_sc_rt9t3v3__tt_025C_3v30) {
 		}
 	}
 	
-	cell (gf180mcu_ocd_sc_rt9t3v3__aoi21b_4) {
-		cell_footprint : gf180mcu_ocd_sc_rt9t3v3__aoi21b;
+	cell (gf180mcu_ocd_sc_rt12t3v3__aoi21b_4) {
+		cell_footprint : gf180mcu_ocd_sc_rt12t3v3__aoi21b;
 		area: 46.099200;
 		
 		pg_pin(VPW) {
@@ -2767,8 +2776,8 @@ library(gf180mcu_ocd_sc_rt9t3v3__tt_025C_3v30) {
 		}
 	}
 	
-	cell (gf180mcu_ocd_sc_rt9t3v3__ao21_2) {
-		cell_footprint : gf180mcu_ocd_sc_rt9t3v3__ao21;
+	cell (gf180mcu_ocd_sc_rt12t3v3__ao21_2) {
+		cell_footprint : gf180mcu_ocd_sc_rt12t3v3__ao21;
 		area: 21.952000;
 		
 		pg_pin(VPW) {
@@ -2829,8 +2838,8 @@ library(gf180mcu_ocd_sc_rt9t3v3__tt_025C_3v30) {
 		}
 	}
 	
-	cell (gf180mcu_ocd_sc_rt9t3v3__ao21_4) {
-		cell_footprint : gf180mcu_ocd_sc_rt9t3v3__ao21;
+	cell (gf180mcu_ocd_sc_rt12t3v3__ao21_4) {
+		cell_footprint : gf180mcu_ocd_sc_rt12t3v3__ao21;
 		area: 28.537600;
 		
 		pg_pin(VPW) {
@@ -2891,8 +2900,8 @@ library(gf180mcu_ocd_sc_rt9t3v3__tt_025C_3v30) {
 		}
 	}
 	
-	cell (gf180mcu_ocd_sc_rt9t3v3__ao21b_2) {
-		cell_footprint : gf180mcu_ocd_sc_rt9t3v3__ao21b;
+	cell (gf180mcu_ocd_sc_rt12t3v3__ao21b_2) {
+		cell_footprint : gf180mcu_ocd_sc_rt12t3v3__ao21b;
 		area: 37.318400;
 		
 		pg_pin(VPW) {
@@ -2953,8 +2962,8 @@ library(gf180mcu_ocd_sc_rt9t3v3__tt_025C_3v30) {
 		}
 	}
 
-	cell (gf180mcu_ocd_sc_rt9t3v3__ao21b_4) {
-		cell_footprint : gf180mcu_ocd_sc_rt9t3v3__ao21b;
+	cell (gf180mcu_ocd_sc_rt12t3v3__ao21b_4) {
+		cell_footprint : gf180mcu_ocd_sc_rt12t3v3__ao21b;
 		area: 43.904000;
 		
 		pg_pin(VPW) {
@@ -3015,8 +3024,8 @@ library(gf180mcu_ocd_sc_rt9t3v3__tt_025C_3v30) {
 		}
 	}
 
-	cell (gf180mcu_ocd_sc_rt9t3v3__aoi22_2) {
-		cell_footprint : gf180mcu_ocd_sc_rt9t3v3__aoi22;
+	cell (gf180mcu_ocd_sc_rt12t3v3__aoi22_2) {
+		cell_footprint : gf180mcu_ocd_sc_rt12t3v3__aoi22;
 		area: 30.732800;
 		
 		pg_pin(VPW) {
@@ -3085,8 +3094,8 @@ library(gf180mcu_ocd_sc_rt9t3v3__tt_025C_3v30) {
 		}
 	}
 	
-	cell (gf180mcu_ocd_sc_rt9t3v3__aoi22_4) {
-		cell_footprint : gf180mcu_ocd_sc_rt9t3v3__aoi22;
+	cell (gf180mcu_ocd_sc_rt12t3v3__aoi22_4) {
+		cell_footprint : gf180mcu_ocd_sc_rt12t3v3__aoi22;
 		area: 57.075200;
 		
 		pg_pin(VPW) {
@@ -3155,8 +3164,8 @@ library(gf180mcu_ocd_sc_rt9t3v3__tt_025C_3v30) {
 		}
 	}
 	
-	cell (gf180mcu_ocd_sc_rt9t3v3__ao22_2) {
-		cell_footprint : gf180mcu_ocd_sc_rt9t3v3__ao22;
+	cell (gf180mcu_ocd_sc_rt12t3v3__ao22_2) {
+		cell_footprint : gf180mcu_ocd_sc_rt12t3v3__ao22;
 		area: 24.147200;
 		
 		pg_pin(VPW) {
@@ -3225,8 +3234,8 @@ library(gf180mcu_ocd_sc_rt9t3v3__tt_025C_3v30) {
 		}
 	}
 	
-	cell (gf180mcu_ocd_sc_rt9t3v3__ao22_4) {
-		cell_footprint : gf180mcu_ocd_sc_rt9t3v3__ao22;
+	cell (gf180mcu_ocd_sc_rt12t3v3__ao22_4) {
+		cell_footprint : gf180mcu_ocd_sc_rt12t3v3__ao22;
 		area: 30.732800;
 		
 		pg_pin(VPW) {
@@ -3295,8 +3304,8 @@ library(gf180mcu_ocd_sc_rt9t3v3__tt_025C_3v30) {
 		}
 	}
 	
-	cell (gf180mcu_ocd_sc_rt9t3v3__aoi31_2) {
-		cell_footprint : gf180mcu_ocd_sc_rt9t3v3__aoi31;
+	cell (gf180mcu_ocd_sc_rt12t3v3__aoi31_2) {
+		cell_footprint : gf180mcu_ocd_sc_rt12t3v3__aoi31;
 		area: 30.732800;
 		
 		pg_pin(VPW) {
@@ -3365,8 +3374,8 @@ library(gf180mcu_ocd_sc_rt9t3v3__tt_025C_3v30) {
 		}
 	}
 	
-	cell (gf180mcu_ocd_sc_rt9t3v3__aoi31_4) {
-		cell_footprint : gf180mcu_ocd_sc_rt9t3v3__aoi31;
+	cell (gf180mcu_ocd_sc_rt12t3v3__aoi31_4) {
+		cell_footprint : gf180mcu_ocd_sc_rt12t3v3__aoi31;
 		area: 57.075200;
 		
 		pg_pin(VPW) {
@@ -3435,8 +3444,8 @@ library(gf180mcu_ocd_sc_rt9t3v3__tt_025C_3v30) {
 		}
 	}
 	
-	cell (gf180mcu_ocd_sc_rt9t3v3__ao31_2) {
-		cell_footprint : gf180mcu_ocd_sc_rt9t3v3__ao31;
+	cell (gf180mcu_ocd_sc_rt12t3v3__ao31_2) {
+		cell_footprint : gf180mcu_ocd_sc_rt12t3v3__ao31;
 		area: 21.952000;
 		
 		pg_pin(VPW) {
@@ -3505,8 +3514,8 @@ library(gf180mcu_ocd_sc_rt9t3v3__tt_025C_3v30) {
 		}
 	}
 	
-	cell (gf180mcu_ocd_sc_rt9t3v3__ao31_4) {
-		cell_footprint : gf180mcu_ocd_sc_rt9t3v3__ao31;
+	cell (gf180mcu_ocd_sc_rt12t3v3__ao31_4) {
+		cell_footprint : gf180mcu_ocd_sc_rt12t3v3__ao31;
 		area: 28.537600;
 		
 		pg_pin(VPW) {
@@ -3575,8 +3584,8 @@ library(gf180mcu_ocd_sc_rt9t3v3__tt_025C_3v30) {
 		}
 	}
 	
-	cell (gf180mcu_ocd_sc_rt9t3v3__aoi211_2) {
-		cell_footprint : gf180mcu_ocd_sc_rt9t3v3__aoi211;
+	cell (gf180mcu_ocd_sc_rt12t3v3__aoi211_2) {
+		cell_footprint : gf180mcu_ocd_sc_rt12t3v3__aoi211;
 		area: 30.732800;
 		
 		pg_pin(VPW) {
@@ -3645,8 +3654,8 @@ library(gf180mcu_ocd_sc_rt9t3v3__tt_025C_3v30) {
 		}
 	}
 	
-	cell (gf180mcu_ocd_sc_rt9t3v3__aoi211_4) {
-		cell_footprint : gf180mcu_ocd_sc_rt9t3v3__aoi211;
+	cell (gf180mcu_ocd_sc_rt12t3v3__aoi211_4) {
+		cell_footprint : gf180mcu_ocd_sc_rt12t3v3__aoi211;
 		area: 54.880000;
 		
 		pg_pin(VPW) {
@@ -3715,8 +3724,8 @@ library(gf180mcu_ocd_sc_rt9t3v3__tt_025C_3v30) {
 		}
 	}
 	
-	cell (gf180mcu_ocd_sc_rt9t3v3__ao211_2) {
-		cell_footprint : gf180mcu_ocd_sc_rt9t3v3__ao211;
+	cell (gf180mcu_ocd_sc_rt12t3v3__ao211_2) {
+		cell_footprint : gf180mcu_ocd_sc_rt12t3v3__ao211;
 		area: 24.147200;
 		
 		pg_pin(VPW) {
@@ -3785,8 +3794,8 @@ library(gf180mcu_ocd_sc_rt9t3v3__tt_025C_3v30) {
 		}
 	}
 	
-	cell (gf180mcu_ocd_sc_rt9t3v3__ao211_4) {
-		cell_footprint : gf180mcu_ocd_sc_rt9t3v3__ao211;
+	cell (gf180mcu_ocd_sc_rt12t3v3__ao211_4) {
+		cell_footprint : gf180mcu_ocd_sc_rt12t3v3__ao211;
 		area: 30.732800;
 		
 		pg_pin(VPW) {
@@ -3855,8 +3864,8 @@ library(gf180mcu_ocd_sc_rt9t3v3__tt_025C_3v30) {
 		}
 	}
 	
-	cell (gf180mcu_ocd_sc_rt9t3v3__oai211_2) {
-		cell_footprint : gf180mcu_ocd_sc_rt9t3v3__oai211;
+	cell (gf180mcu_ocd_sc_rt12t3v3__oai211_2) {
+		cell_footprint : gf180mcu_ocd_sc_rt12t3v3__oai211;
 		area: 32.928000;
 		
 		pg_pin(VPW) {
@@ -3925,8 +3934,8 @@ library(gf180mcu_ocd_sc_rt9t3v3__tt_025C_3v30) {
 		}
 	}
 	
-	cell (gf180mcu_ocd_sc_rt9t3v3__tiel_4) {
-		cell_footprint : gf180mcu_ocd_sc_rt9t3v3__tiel;
+	cell (gf180mcu_ocd_sc_rt12t3v3__tiel_4) {
+		cell_footprint : gf180mcu_ocd_sc_rt12t3v3__tiel;
 		area : 8.780800;
 		
 		pg_pin(VPW) {
@@ -3962,8 +3971,8 @@ library(gf180mcu_ocd_sc_rt9t3v3__tt_025C_3v30) {
 		}
 	}
 	
-	cell (gf180mcu_ocd_sc_rt9t3v3__tieh_4) {
-		cell_footprint : gf180mcu_ocd_sc_rt9t3v3__tieh;
+	cell (gf180mcu_ocd_sc_rt12t3v3__tieh_4) {
+		cell_footprint : gf180mcu_ocd_sc_rt12t3v3__tieh;
 		area : 8.780800;
 		
 		pg_pin(VPW) {
@@ -3999,8 +4008,8 @@ library(gf180mcu_ocd_sc_rt9t3v3__tt_025C_3v30) {
 		}
 	}
 	
-	cell (gf180mcu_ocd_sc_rt9t3v3__hcf_7) {
-		cell_footprint : gf180mcu_ocd_sc_rt9t3v3__hcf;
+	cell (gf180mcu_ocd_sc_rt12t3v3__hcf_7) {
+		cell_footprint : gf180mcu_ocd_sc_rt12t3v3__hcf;
 		area : 26.342400;
 		
 		pg_pin(VPW) {
@@ -4034,8 +4043,8 @@ library(gf180mcu_ocd_sc_rt9t3v3__tt_025C_3v30) {
 		}
 	}
 	
-	cell (gf180mcu_ocd_sc_rt9t3v3__diode_2) {
-		cell_footprint : gf180mcu_ocd_sc_rt9t3v3__diode;
+	cell (gf180mcu_ocd_sc_rt12t3v3__diode_2) {
+		cell_footprint : gf180mcu_ocd_sc_rt12t3v3__diode;
 		area : 4.390400;
 		
 		pg_pin(VPW) {
@@ -4069,8 +4078,8 @@ library(gf180mcu_ocd_sc_rt9t3v3__tt_025C_3v30) {
 		}
 	}
 	
-	cell (gf180mcu_ocd_sc_rt9t3v3__fill_1) {
-		cell_footprint : gf180mcu_ocd_sc_rt9t3v3__fill;
+	cell (gf180mcu_ocd_sc_rt12t3v3__fill_1) {
+		cell_footprint : gf180mcu_ocd_sc_rt12t3v3__fill;
 		area: 2.195200;
 		
 		pg_pin(VPW) {
@@ -4098,8 +4107,8 @@ library(gf180mcu_ocd_sc_rt9t3v3__tt_025C_3v30) {
 		}
 	}
 	
-	cell (gf180mcu_ocd_sc_rt9t3v3__fill_2) {
-		cell_footprint : gf180mcu_ocd_sc_rt9t3v3__fill;
+	cell (gf180mcu_ocd_sc_rt12t3v3__fill_2) {
+		cell_footprint : gf180mcu_ocd_sc_rt12t3v3__fill;
 		area: 4.390400;
 		
 		pg_pin(VPW) {
@@ -4127,8 +4136,8 @@ library(gf180mcu_ocd_sc_rt9t3v3__tt_025C_3v30) {
 		}
 	}
 	
-	cell (gf180mcu_ocd_sc_rt9t3v3__fill_4) {
-		cell_footprint : gf180mcu_ocd_sc_rt9t3v3__fill;
+	cell (gf180mcu_ocd_sc_rt12t3v3__fill_4) {
+		cell_footprint : gf180mcu_ocd_sc_rt12t3v3__fill;
 		area: 8.780800;
 		
 		pg_pin(VPW) {
@@ -4156,8 +4165,8 @@ library(gf180mcu_ocd_sc_rt9t3v3__tt_025C_3v30) {
 		}
 	}
 	
-	cell (gf180mcu_ocd_sc_rt9t3v3__fill_8) {
-		cell_footprint : gf180mcu_ocd_sc_rt9t3v3__fill;
+	cell (gf180mcu_ocd_sc_rt12t3v3__fill_8) {
+		cell_footprint : gf180mcu_ocd_sc_rt12t3v3__fill;
 		area: 17.561600;
 		
 		pg_pin(VPW) {
@@ -4185,8 +4194,8 @@ library(gf180mcu_ocd_sc_rt9t3v3__tt_025C_3v30) {
 		}
 	}
 	
-	cell (gf180mcu_ocd_sc_rt9t3v3__fillcap_4) {
-		cell_footprint : gf180mcu_ocd_sc_rt9t3v3__fillcap;
+	cell (gf180mcu_ocd_sc_rt12t3v3__fillcap_4) {
+		cell_footprint : gf180mcu_ocd_sc_rt12t3v3__fillcap;
 		area: 8.780800;
 		
 		pg_pin(VPW) {
@@ -4214,8 +4223,8 @@ library(gf180mcu_ocd_sc_rt9t3v3__tt_025C_3v30) {
 		}
 	}
 	
-	cell (gf180mcu_ocd_sc_rt9t3v3__fillcap_8) {
-		cell_footprint : gf180mcu_ocd_sc_rt9t3v3__fillcap;
+	cell (gf180mcu_ocd_sc_rt12t3v3__fillcap_8) {
+		cell_footprint : gf180mcu_ocd_sc_rt12t3v3__fillcap;
 		area: 17.561600;
 		
 		pg_pin(VPW) {
@@ -4243,8 +4252,8 @@ library(gf180mcu_ocd_sc_rt9t3v3__tt_025C_3v30) {
 		}
 	}
 	
-	cell (gf180mcu_ocd_sc_rt9t3v3__fillcap_16) {
-		cell_footprint : gf180mcu_ocd_sc_rt9t3v3__fillcap;
+	cell (gf180mcu_ocd_sc_rt12t3v3__fillcap_16) {
+		cell_footprint : gf180mcu_ocd_sc_rt12t3v3__fillcap;
 		area: 35.123200;
 		
 		pg_pin(VPW) {
